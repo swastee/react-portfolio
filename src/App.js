@@ -5,6 +5,7 @@ import About from "./pages/About"
 
 import RootLayout from "./components/RootLayout"
 import Contact from "./pages/Contact"
+import NotFound from "./pages/NotFound"
 
 const App = () => {
 
@@ -27,6 +28,11 @@ const App = () => {
         {
           path:'contact-page',
           element:<Contact/>
+        },
+
+        {
+          path:'*',
+          element:<NotFound/>
         }
       ]
     },
